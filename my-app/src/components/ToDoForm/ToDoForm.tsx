@@ -47,8 +47,7 @@ export const ToDoForm: FC<TododFormProps> = (props) => {
         <div className="input-field m2">
             <input
                 ref={ref}
-                // onChange={changeHandler} 
-                //  value={title} type="text" 
+              
                 id="title"
                 placeholder="text"
                 onKeyPress={KeyPressHandler}
