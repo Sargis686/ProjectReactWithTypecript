@@ -39,12 +39,12 @@ export const ToDoList: FC<TodoListProps> = ({ todos,onToggle,onRemove }) => {
                     <li className={classes.join('')} key={todo.id}>
                         <label>
                             {/* kapum enq konkret parametre es function-i hamar */}
-                            <div className="pp">
+                          
                             <input type="checkbox" checked={todo.completed}  onChange={onToggle.bind(null,todo.id)}/>
                             <span>{todo.title}</span>
                           
                             <i className="material-icons red-text " onClick={()=>onRemove(todo.id)}>delete</i>
-                            </div>
+                       
                         </label>
                     </li>
                 )
